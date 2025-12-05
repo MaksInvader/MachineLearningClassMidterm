@@ -17,3 +17,5 @@
 ./Clustering/.env
 ./Clustering/clusteringmidterm.csv
 *.csv
+*.pkl
+*.env
