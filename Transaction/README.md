@@ -677,67 +677,39 @@ Fraud            871      3,270   (79.0% correctly detected)
 ## 📸 Generated Visualizations
 
 ### 1. Confusion Matrices Comparison
-**File**: `confusion_matrices_comparison.png`
+Six-panel visualization showing confusion matrices for all models on validation set with True Negatives (TN), False Positives (FP), False Negatives (FN), True Positives (TP), F1-Score and Recall displayed for each model.
 
-Six-panel visualization showing confusion matrices for all models on validation set:
-- True Negatives (TN), False Positives (FP)
-- False Negatives (FN), True Positives (TP)
-- F1-Score and Recall displayed for each model
-- Color-coded heatmap for easy interpretation
+![Confusion Matrices Comparison](./confusion_matrices_comparison.png)
 
 ### 2. Test Set Confusion Matrices
-**File**: `confusion_matrices_test_set.png`
+Six-panel visualization showing test set performance with green color scheme to differentiate from validation, demonstrating generalization to unseen data.
 
-Six-panel visualization showing test set performance:
-- Same layout as validation matrices
-- Green color scheme to differentiate from validation
-- Shows generalization to unseen data
+![Test Set Confusion Matrices](./confusion_matrices_test_set.png)
 
 ### 3. ROC Curves Comparison
-**File**: `roc_curves_comparison.png`
+All models plotted on single ROC space with False Positive Rate vs True Positive Rate (Recall), diagonal line for random classifier baseline, and AUC values displayed for each model.
 
-All models plotted on single ROC space:
-- X-axis: False Positive Rate
-- Y-axis: True Positive Rate (Recall)
-- Diagonal line: Random classifier baseline
-- AUC values displayed for each model
-- XGBoost curve highest (AUC=0.9512)
+![ROC Curves Comparison](./roc_curves_comparison.png)
 
 ### 4. Precision-Recall Curves
-**File**: `precision_recall_curves.png`
+PR curves for all models showing Recall vs Precision with horizontal baseline for random classifier and Average Precision (AP) scores displayed. Better for imbalanced datasets than ROC.
 
-PR curves for all models:
-- X-axis: Recall
-- Y-axis: Precision
-- Horizontal baseline: Random classifier
-- Average Precision (AP) scores displayed
-- Better for imbalanced datasets than ROC
+![Precision-Recall Curves](./precision_recall_curves.png)
 
 ### 5. Feature Importance Comparison
-**File**: `feature_importance_comparison.png`
+Top 20 features for each tree-based model (Decision Tree, Random Forest, XGBoost, LightGBM, Gradient Boosting) with horizontal bar charts sorted by importance, showing consistency/differences across models.
 
-Top 20 features for each tree-based model:
-- Separate panel for Decision Tree, Random Forest, XGBoost, LightGBM, Gradient Boosting
-- Horizontal bar charts sorted by importance
-- Shows consistency/differences across models
+![Feature Importance Comparison](./feature_importance_comparison.png)
 
 ### 6. Threshold Tuning Analysis
-**File**: `threshold_tuning_analysis.png`
+Two-panel analysis with line plot of F1, Precision, Recall vs Threshold (0.1 to 0.9) and bar chart comparing Default (0.5), Best F1, Best Recall thresholds to help choose optimal threshold for business needs.
 
-Two-panel analysis:
-- **Left**: Line plot of F1, Precision, Recall vs Threshold (0.1 to 0.9)
-- **Right**: Bar chart comparing Default (0.5), Best F1, Best Recall thresholds
-- Helps choose optimal threshold for business needs
+![Threshold Tuning Analysis](./threshold_tuning_analysis.png)
 
 ### 7. Model Comparison Metrics
-**File**: `model_comparison_metrics.png`
+Four-panel visualization comparing F1-Score, Recall, Precision, and Accuracy across all models with horizontal bar charts and labeled values.
 
-Four-panel visualization:
-- F1-Score comparison (steelblue)
-- Recall comparison (coral)
-- Precision comparison (lightgreen)
-- Accuracy comparison (mediumpurple)
-- Horizontal bar charts with values labeled
+![Model Comparison Metrics](./model_comparison_metrics.png)
 
 ### Usage in Presentations
 

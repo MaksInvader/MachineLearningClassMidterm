@@ -1,6 +1,6 @@
-# 🚗 Car Price Prediction - Machine Learning Project
+# 🎵 Song Year Prediction - Machine Learning Project
 
-A comprehensive machine learning project for predicting car prices using regression models. This project includes exploratory data analysis, data preprocessing, multiple model training, and detailed model evaluation.
+A comprehensive machine learning project for predicting song release years using regression models. This project includes exploratory data analysis, data preprocessing, multiple model training, and detailed model evaluation.
 
 ## 📋 Table of Contents
 
@@ -17,7 +17,7 @@ A comprehensive machine learning project for predicting car prices using regress
 
 ## 🎯 Project Overview
 
-This project aims to predict car prices based on various features using multiple regression algorithms. The workflow includes:
+This project aims to predict song release years based on audio features using multiple regression algorithms. The workflow includes:
 
 1. **Exploratory Data Analysis (EDA)** - Understanding data distribution, correlations, and patterns
 2. **Data Preprocessing** - Handling missing values, outliers, and feature scaling
@@ -29,8 +29,8 @@ This project aims to predict car prices based on various features using multiple
 
 - **Source**: `midterm-regresi-dataset.csv`
 - **Type**: Regression problem
-- **Target Variable**: Car price (first column)
-- **Features**: Various car attributes and specifications
+- **Target Variable**: Song release year (first column)
+- **Features**: Various audio features and song characteristics
 - **Split**: 80% training, 20% testing
 
 ### Data Preprocessing Steps
@@ -45,7 +45,7 @@ This project aims to predict car prices based on various features using multiple
 ## 📁 Project Structure
 
 ```
-Cars/
+Regression/
 ├── 📓 Notebooks
 │   ├── EDA.ipynb                          # Exploratory Data Analysis
 │   ├── Model_Training.ipynb               # Model training pipeline
@@ -56,10 +56,10 @@ Cars/
 │
 ├── 📁 Data Files
 │   ├── midterm-regresi-dataset.csv        # Original dataset
-│   ├── cars_processed.csv                 # Processed dataset
-│   ├── cars_scaled_standard.csv           # StandardScaler output
-│   ├── cars_scaled_minmax.csv             # MinMaxScaler output
-│   ├── cars_scaled_robust.csv             # RobustScaler output
+│   ├── songs_processed.csv                # Processed dataset
+│   ├── songs_scaled_standard.csv          # StandardScaler output
+│   ├── songs_scaled_minmax.csv            # MinMaxScaler output
+│   ├── songs_scaled_robust.csv            # RobustScaler output
 │   ├── X_features.csv                     # Feature matrix
 │   ├── X_features_scaled.csv              # Scaled features
 │   └── y_target.csv                       # Target variable
@@ -222,36 +222,30 @@ This notebook provides:
 
 The project generates comprehensive visualizations:
 
-### 1. Model Comparison (`model_comparison.png`)
-- R² Score comparison
-- RMSE comparison
-- MAE comparison
-- Training time comparison
+### 1. Model Comparison
+R² Score comparison, RMSE comparison, MAE comparison, and training time comparison across all models.
 
-### 2. Comprehensive Evaluation (`comprehensive_model_evaluation.png`)
-- 6-panel comparison of all metrics
-- R² scores with values
-- RMSE, MAE, MAPE comparisons
-- Training time analysis
-- Overall performance score (0-100)
+![Model Comparison](./model_comparison.png)
 
-### 3. Prediction Analysis (`prediction_vs_actual.png`)
-- Top 6 models' predictions vs actual values
-- Perfect prediction line
-- R² scores annotated
-- Visual assessment of model accuracy
+### 2. Comprehensive Evaluation
+6-panel comparison of all metrics including R² scores with values, RMSE, MAE, MAPE comparisons, training time analysis, and overall performance score (0-100).
 
-### 4. Residual Analysis (`residual_analysis.png`)
-- Residual plots for top 6 models
-- Standard deviation bands (±1σ, ±2σ)
-- Pattern identification
-- Homoscedasticity check
+![Comprehensive Model Evaluation](./comprehensive_model_evaluation.png)
 
-### 5. Error Distribution (`error_distribution.png`)
-- Histogram of residuals
-- Normal distribution fit
-- Statistical properties
-- Zero-error reference line
+### 3. Prediction Analysis
+Top 6 models' predictions vs actual values with perfect prediction line, R² scores annotated, and visual assessment of model accuracy.
+
+![Prediction vs Actual](./prediction_vs_actual.png)
+
+### 4. Residual Analysis
+Residual plots for top 6 models with standard deviation bands (±1σ, ±2σ), pattern identification, and homoscedasticity check.
+
+![Residual Analysis](./residual_analysis.png)
+
+### 5. Error Distribution
+Histogram of residuals with normal distribution fit, statistical properties, and zero-error reference line.
+
+![Error Distribution](./error_distribution.png)
 
 ## 🔍 Key Findings
 
@@ -350,20 +344,5 @@ This project is part of a Machine Learning course. Feel free to:
 
 This project is for educational purposes.
 
-## 👨‍💻 Author
-
-Machine Learning Midterm Project
-Date: December 2025
-
-## 🙏 Acknowledgments
-
-- Scikit-learn documentation
-- XGBoost developers
-- RAPIDS AI team
-- Machine Learning course instructors
-
 ---
 
-**For detailed GPU acceleration setup, see [RAPIDS_SETUP_GUIDE.md](RAPIDS_SETUP_GUIDE.md)**
-
-**For RAPIDS completeness verification, see [RAPIDS_COMPLETENESS_VERIFICATION.md](RAPIDS_COMPLETENESS_VERIFICATION.md)**
