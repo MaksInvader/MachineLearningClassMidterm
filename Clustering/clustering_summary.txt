@@ -1,0 +1,19 @@
+CLUSTERING EVALUATION SUMMARY
+==================================================
+
+Best_Model: K-Means
+N_Clusters: 3
+Silhouette_Score: 0.2470972601600905
+Calinski_Harabasz: 1546.528219687785
+Davies_Bouldin: 1.6054428218015635
+Total_Samples: 8636
+Noise_Points: 0
+Total_Features: 17
+Numeric_Features: 17
+
+==================================================
+CLUSTER SIZES
+==================================================
+Cluster 0: 1,567 (18.1%)
+Cluster 1: 5,857 (67.8%)
+Cluster 2: 1,212 (14.0%)
