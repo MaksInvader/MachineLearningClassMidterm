@@ -225,56 +225,45 @@ This notebook provides:
 
 The project generates 9 comprehensive visualizations:
 
-### 1. Optimal Cluster Analysis (`optimal_clusters_analysis.png`)
-- 4-panel analysis showing:
-  - Elbow Method (Inertia curve)
-  - Silhouette Score progression
-  - Calinski-Harabasz Index
-  - Davies-Bouldin Index
-- Helps determine optimal k value
+### 1. Optimal Cluster Analysis
+4-panel analysis showing Elbow Method, Silhouette Score progression, Calinski-Harabasz Index, and Davies-Bouldin Index to help determine optimal k value.
 
-### 2. Model Comparison (`clustering_comparison.png`)
-- Side-by-side metric comparison
-- Silhouette scores
-- Calinski-Harabasz indices
-- Davies-Bouldin indices
-- Training time comparison
+![Optimal Clusters Analysis](./optimal_clusters_analysis.png)
 
-### 3. 2D PCA Visualizations (`clusters_pca_2d.png`)
-- All 6 models visualized
-- Principal Component Analysis projection
-- Shows cluster separation
-- Color-coded customer segments
+### 2. Model Comparison
+Side-by-side metric comparison of all 6 clustering algorithms including Silhouette scores, Calinski-Harabasz indices, Davies-Bouldin indices, and training time.
 
-### 4. 3D PCA Visualization (`clusters_pca_3d_best.png`)
-- Best model (K-Means) in 3D space
-- Interactive perspective
-- Enhanced cluster separation view
-- Variance explained by components
+![Clustering Comparison](./clustering_comparison.png)
 
-### 5. Silhouette Analysis (`silhouette_analysis.png`)
-- Per-cluster silhouette coefficients
-- Shows cluster quality
-- Identifies poorly clustered samples
-- Average silhouette line
+### 3. 2D PCA Visualizations
+All 6 models visualized using Principal Component Analysis projection showing cluster separation with color-coded customer segments.
 
-### 6. Cluster Size Distribution (`cluster_size_distribution.png`)
-- Balance across all models
-- Sample counts per cluster
-- Percentage distribution
-- Identifies dominant segments
+![Clusters PCA 2D](./clusters_pca_2d.png)
 
-### 7. Cluster Profiles - Radar Chart (`cluster_profiles_radar.png`)
-- Top 8 distinguishing features
-- Normalized 0-1 scale
-- Comparative view of segments
-- Easy pattern identification
+### 4. 3D PCA Visualization
+Best model (K-Means) visualized in 3D space with enhanced cluster separation view and variance explained by components.
 
-### 8. Feature Importance (`feature_importance.png`)
-- Variance between cluster means
-- Ranked by importance
-- Color-coded significance
-- Guides feature selection
+![Clusters PCA 3D](./clusters_pca_3d_best.png)
+
+### 5. Silhouette Analysis
+Per-cluster silhouette coefficients showing cluster quality, identifying poorly clustered samples, and average silhouette line.
+
+![Silhouette Analysis](./silhouette_analysis.png)
+
+### 6. Cluster Size Distribution
+Balance across all models showing sample counts per cluster, percentage distribution, and identifies dominant segments.
+
+![Cluster Size Distribution](./cluster_size_distribution.png)
+
+### 7. Cluster Profiles - Radar Chart
+Top 8 distinguishing features with normalized 0-1 scale providing comparative view of segments for easy pattern identification.
+
+![Cluster Profiles Radar](./cluster_profiles_radar.png)
+
+### 8. Feature Importance
+Variance between cluster means, ranked by importance with color-coded significance to guide feature selection.
+
+![Feature Importance](./feature_importance.png)
 
 ### 9. Business Insights (In Notebook)
 - Detailed segment characteristics
