@@ -1,4 +1,4 @@
-# 🎓 Machine Learning Midterm Project Portfolio
+# 🎓 Machine Learning Midterm Project
 
 A comprehensive machine learning portfolio featuring three distinct projects: **Song Year Prediction** (Regression), **Customer Segmentation** (Clustering), and **Transaction Fraud Detection** (Classification). This repository demonstrates proficiency across supervised and unsupervised learning paradigms with extensive EDA, feature engineering, model training, and evaluation.
 
